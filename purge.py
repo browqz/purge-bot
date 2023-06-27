@@ -15,7 +15,7 @@ async def on_ready():
 
 @bot.command()
 async def nigga(ctx, nombre: int):
-    # Supprimer les messages dans le canal actuel
+
     await ctx.channel.purge(limit=nombre + 1)
     print(f'{nombre}  messages ont bien été supprimes dans le salon : {ctx.channel.name}')
 
